@@ -1,15 +1,10 @@
 <?php
+require_once('bootstrap.php');
 
-require_once(__DIR__."/../vendor/autoload.php");
 
-// Creating Dot Env Intsnce
-$dotenv = new Dotenv\Dotenv(__DIR__);
-$dotenv->load();
+$helper = $fb->getRedirectLoginHelper();
+$permissions=['email','user_likes'];
 
-// Creating Facebook Instance
+$login_url = $helper->getLoginUrl('http://localhost:3000/src/login_callback.php',$permissions);
 
-$fb = new Facebook\Facebook([
-	"app_id" => getenv("FB_APP_ID"),
-	"app_secret" =>getenv("FB_APP_SECRET"),
-	"default_graph_version" =>getenv("FB_API_VERSION")
-]);
+echo '<a href="'.$login_url.'">Login with facebook</a>';
