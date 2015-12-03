@@ -1,0 +1,13 @@
+{
+	"autoload": {
+
+		"psr-4": {
+			"saratonite\\fbapp\\src\\" : "src/"
+		}
+
+	},
+    "require": {
+        "facebook/php-sdk-v4": "^5.1",
+		"vlucas/phpdotenv": "^2.1"
+    }
+}
