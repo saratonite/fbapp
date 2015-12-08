@@ -2,3 +2,5 @@ vendor/
 dev-docs/
 db/
 .env
+src/assets/
+

@@ -1,0 +1,23 @@
+{
+  "name": "fbapp",
+  "homepage": "https://github.com/saratonite/fbapp",
+  "authors": [
+    "Sarath <sarath.hacks@gmail.com>"
+  ],
+  "description": "Facebook test app",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/assets/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}

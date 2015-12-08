@@ -8,6 +8,7 @@
 	},
     "require": {
         "facebook/php-sdk-v4": "^5.1",
-		"vlucas/phpdotenv": "^2.1"
+		"vlucas/phpdotenv": "^2.1",
+		"filp/whoops": "^1.1"
     }
 }
