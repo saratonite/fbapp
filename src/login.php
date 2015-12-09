@@ -2,6 +2,24 @@
 
 require('partials/header.php');
 $permissions=['email','user_likes','user_birthday','user_about_me','user_actions.music'];
+
+// Check if Session Consist
+
+if(isset($_SESSION['facebook_access_token'])){
+
+	//
+	
+
+	$fb->setDefaultAccessToken($_SESSION['facebook_access_token']);
+
+	//
+
+
+	
+}
+
+
+
 // Create login url
 
 $helper = $fb->getRedirectLoginHelper();
