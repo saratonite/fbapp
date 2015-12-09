@@ -1,7 +1,4 @@
-<?php
-require(__DIR__."/../bootstrap.php");
 
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

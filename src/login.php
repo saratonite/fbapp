@@ -1,25 +1,35 @@
 <?php
 
-require('partials/header.php');
+require(__DIR__."/bootstrap.php");
 $permissions=['email','user_likes','user_birthday','user_about_me','user_actions.music'];
 
 // Check if Session Consist
 
 if(isset($_SESSION['facebook_access_token'])){
 
-	//
-	
 
 	$fb->setDefaultAccessToken($_SESSION['facebook_access_token']);
 
-	//
+	
+	try{
+		// Its a hack not a perfect solution
+		$me = $fb->get('/me');
+		if($me){
+			header('Location: profile.php');
+			exit;
+		}
 
+	}
+
+	catch(Exception $e) {
+
+	}
 
 	
 }
 
 
-
+require('partials/header.php');
 // Create login url
 
 $helper = $fb->getRedirectLoginHelper();
