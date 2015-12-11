@@ -44,7 +44,7 @@ $helper = $fb->getRedirectLoginHelper();
 					<h1>Login With Facebook</h1>
 				</div>
 				<form>
-					<a class="btn btn-primary" href="<?= $helper->getLoginUrl('http://localhost:3000/src/login_callback.php',$permissions);?>">Connect Facebook</a>
+					<a class="btn btn-primary" href="<?= $helper->getLoginUrl('http://localhost:3000/src/fb_callback.php',$permissions);?>">Connect Facebook</a>
 				</form>
 			</div>
 		</div>
