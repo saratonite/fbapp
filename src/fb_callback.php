@@ -25,7 +25,7 @@ if (isset($accessToken)) {
 
   // Now you can redirect to another page and use the
   // access token from $_SESSION['facebook_access_token']
-  
-  header("Location : profile.php");
+
+  header('Location: profile.php');
 }
 
