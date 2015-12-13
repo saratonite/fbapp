@@ -23,6 +23,10 @@ if(isset($_SESSION['facebook_access_token'])){
 
 	
 }
+else{
+	header("Location: login.php");
+	exit();
+}
 
 // Get Profile data
 try{
@@ -40,6 +44,15 @@ require('partials/header.php');php
 
 ?>
 <div class="container">
+<nav class="navbar">
+	<ul class="nav navbar-nav nav-pills">
+	<li><a href="">FbApp</a></li>
+</ul>
+<ul class="nav navbar-nav nav-pills pull-right">
+	<li><a href="logout.php">Logout</a></li>
+</ul>
+</nav>
+
 	<div class="row">
 		<div class="page-header"><h1>Profile</h1></div>
 		<div class="col-md-6">
